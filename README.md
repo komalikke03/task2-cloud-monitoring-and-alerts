@@ -32,7 +32,7 @@ To monitor a cloud-based EC2 instance using AWS CloudWatch and configure alerts 
 An EC2 instance was launched and used as the monitored resource.
 
 📷 Screenshot:
-![EC2 Instance](images/ec2-instance.png)
+![EC2 Instance](images/1.png)
 
 ---
 
@@ -41,7 +41,7 @@ An EC2 instance was launched and used as the monitored resource.
 Instance configuration including Public IP, Instance Type, and Security settings.
 
 📷 Screenshot:
-![Instance Details](images/instance-details.png)
+![Instance Details](images/2.png)
 
 ---
 
@@ -56,7 +56,7 @@ yes > /dev/null &
 This continuously consumes CPU resources.
 
 📷 Screenshot:
-![CPU Load](images/cpu-load.png)
+![CPU Load](images/3.png)
 
 ---
 
@@ -64,13 +64,13 @@ This continuously consumes CPU resources.
 
 A CloudWatch alarm was created with:
 
-* **Metric:** CPUUtilization
-* **Threshold:** Greater than 10%
-* **Period:** 5 minutes
-* **Action:** SNS Email Notification
+* Metric: CPUUtilization
+* Threshold: Greater than 10%
+* Period: 5 minutes
+* Action: SNS Email Notification
 
 📷 Screenshot:
-![Alarm Created](images/alarm-created.png)
+![Alarm Created](images/4.png)
 
 ---
 
@@ -79,7 +79,7 @@ A CloudWatch alarm was created with:
 The alarm state changed from **OK → In Alarm**, confirming that CPU usage crossed the threshold.
 
 📷 Screenshot:
-![Alarm State](images/alarm-state.png)
+![Alarm State](images/5.png)
 
 ---
 
@@ -88,7 +88,7 @@ The alarm state changed from **OK → In Alarm**, confirming that CPU usage cros
 CloudWatch dashboard showing active alarm and warning indication.
 
 📷 Screenshot:
-![Overview](images/cloudwatch-overview.png)
+![Overview](images/6.png)
 
 ---
 
@@ -97,7 +97,7 @@ CloudWatch dashboard showing active alarm and warning indication.
 Graph showing CPU utilization spike in recent alarms.
 
 📷 Screenshot:
-![Recent Alarms](images/recent-alarms.png)
+![Recent Alarms](images/7.png)
 
 ---
 
@@ -106,7 +106,7 @@ Graph showing CPU utilization spike in recent alarms.
 Detailed CPU utilization metrics graph.
 
 📷 Screenshot:
-![Metrics](images/metrics.png)
+![Metrics](images/8.png)
 
 ---
 
@@ -115,7 +115,7 @@ Detailed CPU utilization metrics graph.
 Custom CloudWatch dashboard displaying CPU utilization graph.
 
 📷 Screenshot:
-![Dashboard](images/dashboard.png)
+![Dashboard](images/9.png)
 
 ---
 
@@ -124,7 +124,7 @@ Custom CloudWatch dashboard displaying CPU utilization graph.
 Email alert received when CPU usage exceeded threshold.
 
 📷 Screenshot:
-![Email Alert](images/email-alert.png)
+![Email Alert](images/10.png)
 
 ---
 
